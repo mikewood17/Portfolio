@@ -34,3 +34,15 @@
     font-weight: $font-weight--bold;
     font-size: $large__font-size;
 }
+
+// About me html
+
+.short{
+    font-size: $large__font-size;
+    font-weight: $font-weight--bold ;
+}
+
+.long{
+    font-size: 18px;
+    font-weight: $font-weight--light;
+}

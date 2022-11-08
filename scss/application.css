@@ -84,6 +84,16 @@
   font-size: 20px;
 }
 
+.short {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.long {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .btn {
   height: 56px;
   width: 150px;
@@ -163,6 +173,14 @@
 .project-img {
   max-width: 300px;
   max-height: 300px;
+}
+
+.about-img {
+  border-radius: 50%;
+  max-width: 18.75em;
+  max-height: 18.75em;
+  margin: 2.5em;
+  flex: 1;
 }
 
 * {
@@ -397,5 +415,23 @@ footer {
 }
 
 .content {
+  font-size: 20px;
+}
+
+.about-main {
+  height: 100vh;
+}
+
+.about-container {
+  display: flex;
+}
+
+.short,
+.long {
+  flex: 1;
+  margin: 1.25em;
+}
+
+.about-me p {
   font-size: 20px;
 }/*# sourceMappingURL=application.css.map */

@@ -2,6 +2,7 @@
 // Images 
 // ===========================================
 
+// Index.html
 
 .hero-img{
     border: 5px solid $white;
@@ -14,4 +15,14 @@
 .project-img{
     max-width: 300px;
     max-height: 300px;
+}
+
+// About me.html
+
+.about-img{
+    border-radius: 50%;
+    max-width: em(300px);
+    max-height: em(300px);
+    margin: em(40px);
+    flex: 1;
 }

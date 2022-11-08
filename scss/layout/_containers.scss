@@ -174,3 +174,24 @@ footer {
 .content{
     font-size: $large__font-size;
 }
+
+// About-me.html
+
+.about-main{
+    height: 100vh;
+}
+
+.about-container{
+    display: flex;
+}
+.short,
+.long {
+    flex: 1;
+    margin: em(20px);
+}
+
+.about-me{
+    p {
+        font-size: $large__font-size;
+    }
+}
