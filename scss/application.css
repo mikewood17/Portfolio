@@ -41,9 +41,6 @@
   .nav {
     display: grid;
   }
-  .info-container {
-    max-width: 50%;
-  }
 }
 @media (min-width: 1200px) {
   .hidden-xl {
@@ -55,9 +52,20 @@
   .row {
     max-width: 1500px;
   }
+  .secondary-content {
+    max-width: 1500px;
+  }
+  .info-container {
+    max-width: 50%;
+  }
+  .secondary-content {
+    display: flex;
+    flex-direction: row !important;
+  }
 }
 .topic-header {
   text-align: center;
+  margin-top: 0;
 }
 
 .contact-me {
@@ -110,6 +118,7 @@
 .message {
   resize: none;
   height: 150px;
+  padding-top: 10px;
 }
 
 .submit {
@@ -164,6 +173,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 header {
@@ -337,26 +347,42 @@ footer {
 
 .secondary-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .info-container {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .contact-form {
   display: flex;
+  flex: 1;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 
 .contact-name {
+  display: flex;
   width: 100%;
+}
+
+.first-name,
+.last-name {
+  flex: 1;
+}
+
+.first-name {
+  margin-right: 10px;
+}
+
+.contact-input {
+  margin-top: 10px;
 }
 
 .footer-nav {

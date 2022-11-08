@@ -74,9 +74,6 @@
   .nav{
     display: grid;
   }
-  .info-container{
-    max-width: 50%;
-  }
 }
 
 @media (min-width: $breakpoint-xl) {
@@ -88,5 +85,15 @@
   }
   .row{
     max-width: 1500px;
+  }
+  .secondary-content{
+    max-width: 1500px;
+  }
+  .info-container{
+    max-width: 50%;
+  }
+  .secondary-content{
+    display: flex;
+    flex-direction: row !important;
   }
 }

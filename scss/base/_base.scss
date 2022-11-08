@@ -8,6 +8,7 @@ body {
     font-size: $base__font-size;
     line-height: calc($base__line / $base__font-size);
     font-family: $font-family--primary;
+    margin: 0;
 }
 
 header {

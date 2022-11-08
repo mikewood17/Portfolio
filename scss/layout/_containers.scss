@@ -122,23 +122,36 @@ footer {
 
 .secondary-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .info-container{
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .contact-form{
     display: flex;
+    flex: 1;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 .contact-name{
+    display: flex;
     width: 100%;
+}
+.first-name,
+.last-name {
+    flex: 1;
+}
+.first-name{
+    margin-right: 10px;
+}
+.contact-input{
+    margin-top: 10px;
 }
 
 //footer Containers
