@@ -74,6 +74,9 @@
   .nav{
     display: grid;
   }
+  .info-container{
+    max-width: 50%;
+  }
 }
 
 @media (min-width: $breakpoint-xl) {
@@ -82,5 +85,8 @@
   }
   .nav{
     display: grid;
+  }
+  .row{
+    max-width: 1500px;
   }
 }

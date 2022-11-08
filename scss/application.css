@@ -41,6 +41,9 @@
   .nav {
     display: grid;
   }
+  .info-container {
+    max-width: 50%;
+  }
 }
 @media (min-width: 1200px) {
   .hidden-xl {
@@ -48,6 +51,9 @@
   }
   .nav {
     display: grid;
+  }
+  .row {
+    max-width: 1500px;
   }
 }
 .topic-header {
@@ -245,7 +251,7 @@ footer {
 }
 
 .heading {
-  max-height: 600px;
+  max-height: 650px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -303,7 +309,6 @@ footer {
 .row {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
   justify-content: center;
   align-content: stretch;
 }
@@ -332,6 +337,7 @@ footer {
 
 .secondary-content {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }

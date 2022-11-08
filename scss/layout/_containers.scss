@@ -33,7 +33,7 @@ footer {
 // header containers
     
 .heading{
-    max-height: 600px;
+    max-height: 650px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -92,7 +92,6 @@ footer {
 .row{
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
     justify-content: center;
     align-content: stretch;
 }
@@ -123,6 +122,7 @@ footer {
 
 .secondary-content{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
