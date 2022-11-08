@@ -58,14 +58,15 @@
   .info-container {
     max-width: 50%;
   }
-  .secondary-content {
+  .secondary-content,
+.about-container {
     display: flex;
     flex-direction: row !important;
   }
 }
 .topic-header {
   text-align: center;
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 .contact-me {
@@ -77,11 +78,24 @@
   font-weight: 700;
 }
 
+.contact-header {
+  margin-top: 5px;
+}
+
 .declaration {
   color: #ff5a09;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
+}
+
+.about-me-header {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.about-heading {
+  font-size: 2em;
 }
 
 .short {
@@ -91,7 +105,7 @@
 
 .long {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .btn {
@@ -181,6 +195,11 @@
   max-height: 18.75em;
   margin: 2.5em;
   flex: 1;
+}
+
+.placeholder-img {
+  height: 800px;
+  width: 800px;
 }
 
 * {
@@ -419,11 +438,13 @@ footer {
 }
 
 .about-main {
-  height: 100vh;
+  margin-bottom: 400px;
 }
 
 .about-container {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .short,

@@ -178,11 +178,13 @@ footer {
 // About-me.html
 
 .about-main{
-    height: 100vh;
+    margin-bottom: 400px;
 }
 
 .about-container{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .short,
 .long {

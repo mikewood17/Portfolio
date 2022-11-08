@@ -92,7 +92,8 @@
   .info-container{
     max-width: 50%;
   }
-  .secondary-content{
+  .secondary-content,
+  .about-container {
     display: flex;
     flex-direction: row !important;
   }
