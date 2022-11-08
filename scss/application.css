@@ -84,6 +84,8 @@
 }
 
 .form-control {
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 47px;
   padding: 5px 15px;
   border-color: #ccc;
@@ -99,12 +101,19 @@
   width: 100%;
 }
 
+.message {
+  resize: none;
+  height: 150px;
+}
+
 .submit {
   margin-top: 1.875em;
   border: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 16px;
+  height: 40px;
 }
 
 .social-icon {
@@ -328,7 +337,6 @@ footer {
 }
 
 .info-container {
-  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

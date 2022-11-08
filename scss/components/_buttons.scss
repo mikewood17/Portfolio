@@ -18,6 +18,8 @@
 }
 
 .form-control{
+    font-size: $base__font-size;
+    font-family: $font-family--primary;
     height: 47px;
     padding: 5px 15px;
     border-color: #ccc;
@@ -39,6 +41,11 @@
 
 // Secondary Content
 
+.message{
+    resize: none;
+    height: 150px;
+}
+
 .submit{
     margin-top: em(30px);
     border: none;
@@ -48,6 +55,7 @@
     font-size: $base__font-size;
     height: 40px;
 }
+
 
 // Scheme.html
 
