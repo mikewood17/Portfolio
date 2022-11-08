@@ -1,0 +1,86 @@
+// =================================================
+// Utilities
+// =================================================
+
+// Import Google fonts if defined
+
+@if variable-exists(font-url--google) {
+    @import url($font-url--google);
+}
+
+// em value calculation
+
+@function em($target, $context: $base__font-size) {
+    @return calc($target / $context) * 1em;
+}
+
+// Mixins
+
+@mixin bg-colors($map) {  
+    @each $theme, $color in $map {
+          &--#{$theme} {
+            background-color: $color;
+        }
+      }
+    }
+
+// media queries
+
+@media (min-width: $breakpoint-xxs) {
+  .hidden-xxs{
+    display: none;
+  }
+  body{
+    display: block;
+  }
+
+}
+
+@media (min-width: $breakpoint-xs) {
+  .hidden-xs{
+    display: none;
+  }
+  body{
+    display: block;
+  }
+}
+
+@media (min-width: $breakpoint-sm) {
+  .hidden-sm{
+    display: none;
+  }
+  body{
+    display: block;
+  }
+}
+
+
+@media (min-width: $breakpoint-md) {
+  .hidden-md{
+    display: none;
+  }
+  .nav{
+    display: grid;
+  }
+  .title{
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .hidden-lg{
+    display: none;
+  }
+  .nav{
+    display: grid;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .hidden-xl{
+    display: none;
+  }
+  .nav{
+    display: grid;
+  }
+}

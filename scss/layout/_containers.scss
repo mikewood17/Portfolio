@@ -1,0 +1,164 @@
+// =================================================
+// Containers 
+// =================================================
+
+// Base containers
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+}
+
+header {
+    color: $white;
+    background: url(../img/header-img.webp) center / cover no-repeat;
+    width: 100%;
+}
+nav {
+    color: $white;
+    background-color: $color-primary;
+}
+
+main {
+    color: $black;
+}
+
+footer {
+    color: $white;
+    background-color: $color-primary;
+}
+
+// header containers
+    
+.heading{
+    max-height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Nav Containers
+.nav-container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.initials{
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid $white;
+}
+
+.nav-content,
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid $white;
+    line-height: 40px;
+    a {
+        color: $white;
+        &:hover{
+            text-decoration: $color-accent 2px underline;
+        }
+    }
+}
+.contact{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socials{
+    margin-top: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+// Main Containers
+
+// Primary contant
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.col{
+    padding: 30px;
+    border: 1px solid $black;
+    border-radius: 15px;
+    margin: em(20px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    top: 0;
+    transition: .5s ease;
+    &:hover {
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease !important;
+    }
+}
+
+.img-container{
+   background-image: url(../img/project-1.jpg) center / cover no repeat;
+}
+
+// Secondary Content
+
+.secondary-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.info-container{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.contact-name{
+    width: 100%;
+}
+
+//footer Containers
+
+.footer-nav{
+    margin-top: em(20px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    a{
+        color: $white;
+    }
+
+}
+
+
+// Scheme.html
+
+.content{
+    font-size: $large__font-size;
+}

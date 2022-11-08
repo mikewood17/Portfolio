@@ -1,0 +1,52 @@
+// =========================================
+// Buttons
+// =========================================
+
+// Base button
+
+.btn {
+    height: 56px;
+    width: 150px;
+    margin-top: 10px;
+    padding: .625em 1.25em;
+    border-radius: .35em;
+    background-color: $color-accent;
+    color: $white;
+    &:hover{
+        background-color: $color-secondary;
+    }
+}
+
+.form-control{
+    height: 47px;
+    padding: 5px 15px;
+    border-color: #ccc;
+    border: 1px solid #e5e5e5;
+    &:focus{
+        border-color: $color-secondary;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 
+        0 0 8px rgba(231, 89, 23, 0.6);
+        outline: none;
+    }
+}
+
+.input-large{
+    width: 100%;
+}
+
+// Primary content button
+
+
+// Secondary Content
+
+.submit{
+    margin-top: em(30px);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+// Scheme.html
+
+//content

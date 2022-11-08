@@ -1,0 +1,27 @@
+// ===================================================
+// Icons
+// ===================================================
+
+.social-icon{
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 10px 10px;
+    max-height: 38px;
+    &:hover{
+        color: $color-secondary;
+        background-color: $white;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+}
+
+.initials{
+    a{
+    color: $white;
+    &:hover{
+        color: $color-accent;
+    }
+    }
+}

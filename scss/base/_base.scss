@@ -1,0 +1,37 @@
+// ===================================================
+// Base Styles
+// ===================================================
+* {
+  box-sizing: border-box;
+}
+body {
+    font-size: $base__font-size;
+    line-height: calc($base__line / $base__font-size);
+    font-family: $font-family--primary;
+}
+
+header {
+    text-align: center;
+    padding: em(48px);
+}
+
+h1 {
+    font-weight: $font-weight--light;
+    font-size: em(42px);
+    line-height: calc(46px / 42px);
+    margin-bottom: em(70px, 42px);
+  }
+  
+  h2 {
+    font-family: $font-family--secondary;
+    font-weight: $font-weight--thin;
+    font-size: em(24px);
+  }
+
+  a{
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  
