@@ -42,7 +42,7 @@
   }
   body{
     display: block;
-    
+    margin: 0;
   }
 }
 
@@ -52,6 +52,7 @@
   }
   body{
     display: block;
+    margin-left: -200px;
   }
 }
 
@@ -59,6 +60,9 @@
 @media (min-width: $breakpoint-md) {
   .hidden-md{
     display: none;
+  }
+  body{
+    margin: 0;
   }
   .nav{
     display: grid;
@@ -72,6 +76,9 @@
   .hidden-lg{
     display: none;
   }
+  body{
+    margin: 0;
+  }
   .nav{
     display: grid;
   }
@@ -80,6 +87,9 @@
 @media (min-width: $breakpoint-xl) {
   .hidden-xl{
     display: none;
+  }
+  body{
+    margin: 0;
   }
   .nav{
     display: grid;
