@@ -12,6 +12,7 @@
     grid-template-areas: 
     "header"
     "main"
+    "contact-form"
     "footer";
 }
 
@@ -35,6 +36,7 @@ footer {
     grid-template-areas: 
     "nav header"
     "nav main"
+    "nav contact-form"
     "nav footer";
     }
 }
