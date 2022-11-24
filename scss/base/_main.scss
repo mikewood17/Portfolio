@@ -67,3 +67,12 @@ mobile-nav.is-active {
         background-color: rgb(79, 79, 79); 
     }
 }
+
+@media (min-width: 767px) {
+    .mobile-nav {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+}
