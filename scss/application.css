@@ -535,6 +535,8 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contact-name {
