@@ -9,7 +9,7 @@ $('.slides').slick({
     slidesToScroll: 3
 });
 
-window.onload = function () {
+// window.onload = function () {
 
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
@@ -17,8 +17,7 @@ window.onload = function () {
     menu_btn.addEventListener('click', function() {
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
-    })
-}
+    });
 
 // form validation
 const form = document.getElementById('form');
@@ -62,5 +61,6 @@ function setErrorFor(input, message) {
 
 function setSuccessFor(input) {
     const contactInput = input.parentElement;
+    // add success icon and border
     contactInput.classList.add("success");
 }
