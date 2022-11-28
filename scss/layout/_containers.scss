@@ -151,7 +151,14 @@ footer {
     margin-right: 10px;
 }
 .contact-input{
-    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.contact-input label {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 //footer Containers

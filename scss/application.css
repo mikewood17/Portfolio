@@ -139,6 +139,8 @@
   padding: 5px 15px;
   border-color: #ccc;
   border: 1px solid #e5e5e5;
+  display: block;
+  width: 100%;
 }
 .form-control:focus {
   border-color: #ff5a09;
@@ -148,6 +150,29 @@
 
 .input-large {
   width: 100%;
+}
+
+.contact-input.success input {
+  border-color: #5ece7f;
+}
+
+.contact-input.error input {
+  border-color: #eb131a;
+}
+
+.contact-input.success i.fa-circle-check {
+  color: #5ece7f;
+  visibility: visible;
+}
+
+.contact-input.error i.fa-circle-exclamation {
+  color: #eb131a;
+  visibility: visible;
+}
+
+.contact-input.error small {
+  color: #eb131a;
+  visibility: visible;
 }
 
 .message {
@@ -186,6 +211,20 @@
 }
 .initials a:hover {
   color: #ec7f37;
+}
+
+.contact-input i {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.contact-input small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .hero-img {
@@ -297,7 +336,7 @@ li {
   padding-top: 120px;
 }
 
-mobile-nav.is-active {
+.mobile-nav.is-active {
   left: 0;
   transition: 0.4s;
 }
@@ -504,7 +543,14 @@ footer {
 }
 
 .contact-input {
-  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.contact-input label {
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .footer-nav {

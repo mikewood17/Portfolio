@@ -191,8 +191,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-form grid-item">
-                        <div class="contact-input contact-name">
+                    <div class="container contact-form grid-item">
+                        <form class="form" id="form"></form>
+                            <div class="contact-input">
+                                <label>First Name: </label>
+                                <input class="form-control" type="text" placeholder="John" id="first-name">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Last Name: </label>
+                                <input class="form-control" type="text" placeholder="Smith" id="last-name">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Email:  </label>
+                                <input class="form-control" type="text" placeholder="John.smith@example.com" id="email">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Subject: </label>
+                                <input class="form-control" type="text" placeholder="Enter Subject here" id="subject">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Message: </label>
+                                <textarea class="form-control message" type="text" placeholder="Enter Message here" id="message"></textarea>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+
+                        <!-- <div class="contact-input contact-name">
                             <input placeholder="First Name" type="text" class="first-name form-control">
                             <input placeholder="Last Name" type="text" class="last-name form-control">
                         </div>
@@ -204,7 +241,7 @@
                         </div>
                         <div class="contact-input">
                             <textarea placeholder="Message" type="text" class="message form-control input-large""></textarea>
-                        </div>
+                        </div> -->
                         <div>
                             <button class="submit btn" type="submit">
                                 Submit
