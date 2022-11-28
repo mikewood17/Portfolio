@@ -288,6 +288,10 @@ li {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+}
+
 .hamburger {
   position: relative;
   display: block;
@@ -476,6 +480,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.mobile-nav-list {
+  padding: 0;
 }
 
 .row {
