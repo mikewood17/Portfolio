@@ -22,24 +22,6 @@ $('.slides').slick({
         mobile_menu.classList.toggle('is-active');
     });
 
-
-//     hamMenu2.addEventListener("click",() =>
-// {
-//     if(
-//     hamMenu2.classList.toggle("active"))
-//     {
-//         openNav();
-//         {document.getElementByClass(".mobile-nav").style.display = "block"};
-//     }
-
-//     else
-//     {
-//         closeNav();
-//         {document.getElementByClass(".mobile-nav").style.display = "none"}
-//     }
-// });
-
-
 // form validation
 
 const form = document.getElementById('form');
@@ -50,35 +32,40 @@ const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    checkInputs();
+    var test = checkInputs();
+    console.log('test', test);
+    if (!test) {
+        e.preventDefault();
+    } else {
+        alert('Form submitted');
+    }
 });
+
 function checkInputs() {
     //get the values from the inputs
+    // trim to remove whitespace
     const firstNameValue = firstName.value.trim();
     const lastNameValue = lastName.value.trim();
     const emailValue = email.value.trim();
     const subjectValue = subject.value;
     const messageValue = message.value;
 
-
+    var errorCount = 0;
     // ==== First Name validation ====
 
     // check if empty field
     if(firstNameValue != undefined && firstNameValue === '') {
         //add error class
         setErrorFor(firstName, 'First name cannot be blank.');
-        console.log(firstName.value);
-
+        errorCount++;
     // check if contains special characters
     } else if  (!isValidName(firstNameValue)){
         // add error class
         setErrorFor(firstName, 'First name cannot contain any special characters');
-        
+        errorCount++;
     } else {
         // add success
         setSuccessFor(firstName);
-        console.log(firstName.value);
     }
 
     // ==== Last Name validation ====
@@ -87,25 +74,25 @@ function checkInputs() {
      if(lastNameValue != undefined && lastNameValue === '') {
         //add error class
         setErrorFor(lastName, 'Last name cannot be blank.');
-        console.log(lastName.value);
-
+        errorCount++;
     // check if contains special characters
     } else if  (!isValidName(lastNameValue)){
         // add error class
         setErrorFor(lastName, 'Last name cannot contain any special characters');
-        
+        errorCount++;
     } else {
         // add success
         setSuccessFor(lastName);
-        console.log(lastName.value);
     }
 
     // ==== Email Validation ====
 
     if(emailValue != undefined && emailValue === '') {
         setErrorFor(email, 'Email cannot be blank!');
+        errorCount++;
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Not a valid email!');
+        errorCount++;
     } else {
         setSuccessFor(email);
     }
@@ -113,7 +100,8 @@ function checkInputs() {
     // ==== Subject Validation ====
 
     if(subjectValue != undefined && subjectValue === '') {
-        setErrorFor(subject, 'Subject cannot be blank')
+        setErrorFor(subject, 'Subject cannot be blank');
+        errorCount++;
     } else {
         setSuccessFor(subject);
     }
@@ -121,9 +109,16 @@ function checkInputs() {
     // ==== Message Validation ====
 
     if(messageValue != undefined && messageValue === '') {
-        setErrorFor(message, 'Message cannot be blank')
+        setErrorFor(message, 'Message cannot be blank');
+        errorCount++;
     } else {
         setSuccessFor(message);
+    }
+
+    if(errorCount != 0) {
+        return false;
+    } else {
+        return true; 
     }
 }
 function setErrorFor(input, message) {
@@ -132,18 +127,26 @@ function setErrorFor(input, message) {
 
     // add error message inside small tag
     small.innerText = message;
-
+    // remove succes class
+    contactInput.classList.remove('success');
     // add error class 
     contactInput.classList.add('error');
+    
 }
 
 function setSuccessFor(input) {
     const contactInput = input.parentElement;
+    // remove error class
+    contactInput.classList.remove('error');
     // add success classicon and border
     contactInput.classList.add('success');
+    
 }
-function isValidName(firstName){
-    return /[^0-9]/.test(firstName);
+
+
+function isValidName(name){
+    return /^[a-zA-Z]*$/.test(name);
+    //return /^[^0-9]$/.test(name);
 }
 function isEmail(email){
     return /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/.test(email);
