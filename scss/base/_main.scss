@@ -79,11 +79,14 @@
 }
 
 // Banner typing effect
-
+.sentence{
+    font-size: 30px;
+}
 .typing-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 .input-cursor {
     display: inline-block;

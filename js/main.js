@@ -113,12 +113,13 @@ async function typeSentence(sentence, eleRef, delay = 100) {
     return;
   }
   
-  
+  // wait function
+
   function waitForMs(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
   }
 
-//   typeSentence("My Name is Michael Wood!", "#sentence")
+// sentance delete function
 
   async function deleteSentence(eleRef) {
     const sentence = $(eleRef).html();
@@ -131,10 +132,16 @@ async function typeSentence(sentence, eleRef, delay = 100) {
     }
   }
 
+  // Banner write and delete function 
+
   $( document ).ready(async function() {
     await typeSentence("My Name is Michael Wood!", "#sentence");
     await waitForMs(2000);
     deleteSentence("#sentence");
-    await waitForMs(2500)
+    await waitForMs(3000)
     await typeSentence("I am a trainee web developer!", "#sentence")
+    await waitForMs(2000);
+    deleteSentence("#sentence");
+    await waitForMs(3200)
+    await typeSentence("Welcome to my webpage!!", "#sentence")
   });
