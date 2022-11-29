@@ -22,15 +22,6 @@ $('.slides').slick({
         mobile_menu.classList.toggle('is-active');
     });
 
-// Hide menu if clicked outside the toggler or nav
-
-$(document).on('mouseup', function(e) {
-    //remove active class if clicked outside nav
-    if(mobile_menu.is(e.target) && mobile_menu.hasAttribute(e.target).length === 0){
-        mobile_menu.removeClass('active');
-        menu_btn.removeClass('active');
-    }
-})
 
 //     hamMenu2.addEventListener("click",() =>
 // {
