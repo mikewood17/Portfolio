@@ -44,6 +44,9 @@
     display: block;
     margin: 0;
   }
+  .top-nav {
+    display: flex;
+  }
 }
 
 @media (min-width: $breakpoint-sm) {
@@ -53,6 +56,9 @@
   body{
     display: block;
     margin-left: -200px;
+  }
+  .top-nav{
+    display: none;
   }
 }
 

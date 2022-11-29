@@ -15,6 +15,9 @@
     display: block;
     margin: 0;
   }
+  .top-nav {
+    display: flex;
+  }
 }
 @media (min-width: 576px) {
   .hidden-sm {
@@ -23,6 +26,9 @@
   body {
     display: block;
     margin-left: -200px;
+  }
+  .top-nav {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -82,6 +88,15 @@
 
 .contact-me {
   margin-bottom: 20px;
+}
+
+.top-nav a {
+  color: #fff;
+}
+
+.top-nav h1 {
+  font-size: 40px;
+  z-index: 99;
 }
 
 .project-name {
@@ -368,12 +383,65 @@ ul {
     display: none;
   }
 }
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.input-cursor {
+  -webkit-animation: blink 0.6s linear infinite alternate;
+          animation: blink 0.6s linear infinite alternate;
+}
+
 .grid {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-columns: minmax(100px, auto);
   grid-auto-rows: minmax(150px, auto);
-  grid-template-areas: "header" "main" "contact-form" "footer";
+  grid-template-areas: "top-nav" "header" "main" "contact-form" "footer";
+}
+
+.top-nav {
+  grid-area: top-nav;
 }
 
 header {
@@ -424,6 +492,16 @@ main {
 footer {
   color: #fff;
   background-color: #393939;
+}
+
+.top-nav {
+  flex-direction: row;
+  background-color: #393939;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .heading {

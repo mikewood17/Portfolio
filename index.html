@@ -11,21 +11,30 @@
 
     <body>
         <div class="grid">
-            <header class="grid-item">
+            <div class="top-nav grid-item hidden-md hidden-lg hidden-xl">
+                <h1><a class="top nav-initial" href="index.html">
+                    MW
+                </a></h1>
                 <button class="hamburger">
                     <div class="bar"></div>
                 </button>
+            </div>
+            <header class="grid-item">
                 <div class="heading">
                     <div class="intro">
-                        <h1 class="title">
+                        <div class="typing-container">
+                            <span id="sentence" class="sentence title"></span>
+                            <span class="input-cursor"></span>
+                          </div>
+                        <!-- <h1 class="title">
                             My Name Is Michael Wood
-                        </h1>
+                        </h1> -->
                         <div>
                             <img class="hero-img" src="img/avatar-img.png">
                         </div>
-                        <h2>
+                        <!-- <h2>
                             I am a Trainee Web Developer
-                        </h2>
+                        </h2> -->
                     </div>
                     <div class="scroll">
                         <h4>
@@ -69,9 +78,6 @@
                 </div>
                 <div class="mobile-nav">
                     <div class=" container">
-                    <div>
-                        <h1><a href="index.html">MW</a></h1>
-                    </div>
                     <div>
                         <ul class="mobile-nav-list">
                             <li><a href="about-me.html">About Me</a></li>
@@ -192,7 +198,7 @@
                         </div>
                     </div>
                     <div class="contact-form grid-item">
-                        <form class="form" id="form"></form>
+                        <form method="post" class="form" id="form">
                             <div class="contact-input">
                                 <label>First Name: </label>
                                 <input class="form-control" type="text" placeholder="John" id="first-name">
@@ -200,14 +206,14 @@
                                 <i class="fa-solid fa-circle-exclamation"></i>
                                 <small>Error message</small>
                             </div>
-                            <div class="contact-input">
+                            <div class="contact-input success">
                                 <label>Last Name: </label>
                                 <input class="form-control" type="text" placeholder="Smith" id="last-name">
                                 <i class="fa-solid fa-circle-check"></i>
                                 <i class="fa-solid fa-circle-exclamation"></i>
                                 <small>Error message</small>
                             </div>
-                            <div class="contact-input">
+                            <div class="contact-input error">
                                 <label>Email:  </label>
                                 <input class="form-control" type="text" placeholder="John.smith@example.com" id="email">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -242,11 +248,12 @@
                         <div class="contact-input">
                             <textarea placeholder="Message" type="text" class="message form-control input-large""></textarea>
                         </div> -->
-                        <div>
-                            <button class="submit btn" type="submit">
-                                Submit
-                            </button>
-                        </div>
+                            <div>
+                                <button class="submit btn" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
                     </div>
                  </div>
             </main>

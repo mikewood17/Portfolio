@@ -31,6 +31,16 @@ footer {
 }
 
 // header containers
+
+.top-nav{
+    flex-direction: row;
+    background-color:$deep-grey;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: baseline;
+    justify-content: space-between;
+}
     
 .heading{
     max-height: 650px;
