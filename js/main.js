@@ -45,9 +45,7 @@ $('.slides').slick({
 const form = document.getElementById('form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
-const nameRegex = /[^0-9]/;
 const email = document.getElementById('email');
-// const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 
@@ -63,23 +61,69 @@ function checkInputs() {
     const subjectValue = subject.value;
     const messageValue = message.value;
 
-    // check if empty field
-    if(firstNameValue === '') {
-        // show error
 
+    // ==== First Name validation ====
+
+    // check if empty field
+    if(firstNameValue != undefined && firstNameValue === '') {
         //add error class
         setErrorFor(firstName, 'First name cannot be blank.');
-    } else {
-        // add success
-        setSuccessFor(firstName);
-    }
-        // check if contains special characters 
-    if(firstNameValue.match(nameRegex)){
+        console.log(firstName.value);
+
+    // check if contains special characters
+    } else if  (!isValidName(firstNameValue)){
         // add error class
         setErrorFor(firstName, 'First name cannot contain any special characters');
+        
     } else {
         // add success
         setSuccessFor(firstName);
+        console.log(firstName.value);
+    }
+
+    // ==== Last Name validation ====
+
+     // check if empty field
+     if(lastNameValue != undefined && lastNameValue === '') {
+        //add error class
+        setErrorFor(lastName, 'Last name cannot be blank.');
+        console.log(lastName.value);
+
+    // check if contains special characters
+    } else if  (!isValidName(lastNameValue)){
+        // add error class
+        setErrorFor(lastName, 'Last name cannot contain any special characters');
+        
+    } else {
+        // add success
+        setSuccessFor(lastName);
+        console.log(lastName.value);
+    }
+
+    // ==== Email Validation ====
+
+    if(emailValue != undefined && emailValue === '') {
+        setErrorFor(email, 'Email cannot be blank!');
+    } else if (!isEmail(emailValue)) {
+        setErrorFor(email, 'Not a valid email!');
+    } else {
+        setSuccessFor(email);
+    }
+
+    // ==== Subject Validation ====
+
+    if(subjectValue != undefined && subjectValue === '') {
+        setErrorFor(subject, 'Subject cannot be blank')
+    } else {
+        setSuccessFor(subject);
+    }
+
+    // ==== Message Validation ====
+
+    if(messageValue != undefined && messageValue === '') {
+        setErrorFor(message, 'Message cannot be blank')
+    } else {
+        setSuccessFor(message);
     }
 }
 function setErrorFor(input, message) {
@@ -90,15 +134,21 @@ function setErrorFor(input, message) {
     small.innerText = message;
 
     // add error class 
-    contactInput.className = 'contactInput error'
+    contactInput.classList.add('error');
 }
 
 function setSuccessFor(input) {
     const contactInput = input.parentElement;
-    // add success icon and border
-    contactInput.className = 'contactInput success'
+    // add success classicon and border
+    contactInput.classList.add('success');
 }
+function isValidName(firstName){
+    return /[^0-9]/.test(firstName);
+}
+function isEmail(email){
+    return /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/.test(email);
 
+}
 
 // Banner effect 
 
