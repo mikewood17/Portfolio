@@ -146,7 +146,6 @@ function setSuccessFor(input) {
 
 function isValidName(name){
     return /^[a-zA-Z]*$/.test(name);
-    //return /^[^0-9]$/.test(name);
 }
 function isEmail(email){
     return /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/.test(email);
