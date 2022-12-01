@@ -36,13 +36,13 @@ footer {
 
 @media (min-width: $breakpoint-sm){
     .grid{
-    grid-template-columns: minmax(100px, 200px) 2fr;
+    grid-template-columns: 2fr;
     grid-template-areas: 
-    "top-nav top-nav"
-    "nav header"
-    "nav main"
-    "nav contact-form"
-    "nav footer";
+    "top-nav"
+    "header"
+    "main"
+    "contact-form"
+    "footer";
     }
 }
 @media (min-width: $breakpoint-md){

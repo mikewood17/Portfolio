@@ -23,10 +23,6 @@
   .hidden-sm {
     display: none;
   }
-  body {
-    display: block;
-    margin-left: -200px;
-  }
   .top-nav {
     display: flex;
   }
@@ -485,8 +481,8 @@ footer {
 
 @media (min-width: 576px) {
   .grid {
-    grid-template-columns: minmax(100px, 200px) 2fr;
-    grid-template-areas: "top-nav top-nav" "nav header" "nav main" "nav contact-form" "nav footer";
+    grid-template-columns: 2fr;
+    grid-template-areas: "top-nav" "header" "main" "contact-form" "footer";
   }
 }
 @media (min-width: 768px) {
@@ -641,6 +637,8 @@ footer {
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .contact-form {
@@ -693,11 +691,6 @@ footer {
   font-size: 20px;
 }
 
-.scheme-container {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
 .about-main {
   margin-bottom: 400px;
 }
@@ -724,4 +717,10 @@ footer {
   align-items: center;
   flex-wrap: nowrap;
   max-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .coding-examples {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=application.css.map */
