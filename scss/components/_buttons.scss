@@ -37,6 +37,35 @@
 .input-large{
     width: 100%;
 }
+// Nav buttons
+
+.top-nav-initial {
+    display: inline-block;
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+// Primary content button
+
+
+// Secondary Content
+
+.message{
+    resize: none;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.submit{
+    margin-top: em(30px);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $base__font-size;
+    height: 40px;
+}
 
 .contact-input.success input {
     border-color: $success;
@@ -60,27 +89,6 @@
     color: $error;
     visibility: visible;
 }
-// Primary content button
-
-
-// Secondary Content
-
-.message{
-    resize: none;
-    height: 150px;
-    padding-top: 10px;
-}
-
-.submit{
-    margin-top: em(30px);
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: $base__font-size;
-    height: 40px;
-}
-
 
 // Scheme.html
 

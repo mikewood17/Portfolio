@@ -76,6 +76,9 @@
   .title{
     font-size: 4rem;
   }
+  .top-nav-initial{
+    display: block;
+  }
 }
 
 @media (min-width: $breakpoint-lg) {
@@ -117,5 +120,9 @@
   .about-container {
     display: flex;
     flex-direction: row !important;
+  }
+  .scheme-container{
+    max-width: 1000px;
+    align-items: center;
   }
 }
