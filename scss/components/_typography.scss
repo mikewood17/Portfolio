@@ -6,7 +6,8 @@
 
 .topic-header{
     text-align: center;
-    margin-top: 30px;
+    margin-top: em(30px);
+    margin-bottom: em(70px, 42px);
 }
 
 // nav

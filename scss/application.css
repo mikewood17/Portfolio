@@ -90,7 +90,8 @@
 }
 .topic-header {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.875em;
+  margin-bottom: 1.6666666667em;
 }
 
 .contact-me {
@@ -259,8 +260,8 @@
 .hero-img {
   border: 5px solid #fff;
   border-radius: 50%;
-  max-width: 12.5em;
-  max-height: 12.5em;
+  width: 12.5em;
+  height: 12.5em;
 }
 
 .project-img {
@@ -270,8 +271,8 @@
 
 .about-img {
   border-radius: 50%;
-  max-width: 18.75em;
-  max-height: 18.75em;
+  width: 18.75em;
+  height: 18.75em;
   margin: 2.5em;
   flex: 1;
 }
@@ -283,6 +284,8 @@
 
 * {
   box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
 }
 
 body {
@@ -300,7 +303,6 @@ h1 {
   font-weight: 300;
   font-size: 2.625em;
   line-height: 1.0952380952;
-  margin-bottom: 1.6666666667em;
 }
 
 h2 {
@@ -529,6 +531,10 @@ footer {
   justify-content: space-between;
 }
 
+.scroll a {
+  color: #fff;
+}
+
 .nav-container {
   position: fixed;
   top: 0;
@@ -582,7 +588,7 @@ footer {
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   top: 0;
 }
@@ -723,4 +729,7 @@ footer {
   .coding-examples {
     max-width: 80%;
   }
+}
+.carousel-item {
+  max-width: 400px !important;
 }/*# sourceMappingURL=application.css.map */

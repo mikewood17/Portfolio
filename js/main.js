@@ -2,12 +2,6 @@
 // Main Javascript
 
 
-
-$('.slides').slick({
-    dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-});
 // hamburger slideout
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
@@ -55,7 +49,7 @@ async function typeSentence(sentence, eleRef, delay = 100) {
     }
   }
 
-  // Banner write and delete function 
+// Banner write and delete function 
 
   $( document ).ready(async function() {
     await typeSentence("My Name is Michael Wood!", "#sentence");
@@ -67,4 +61,9 @@ async function typeSentence(sentence, eleRef, delay = 100) {
     deleteSentence("#sentence");
     await waitForMs(3200)
     await typeSentence("Welcome to my webpage!!", "#sentence")
+  });
+
+  $('.carousel').slick({
+
+    variableWidth: true
   });
