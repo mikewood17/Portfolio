@@ -261,3 +261,87 @@ footer {
 .coding-img{
     max-width: 100%;
 }
+
+// contact success popup
+
+.fade{
+    display: none;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.7);
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center!important;
+    padding: 30px;
+}
+
+.success-popup{
+    display: none;
+
+    background-color: #fff;
+    color: #000;
+    width: auto;
+    position: relative;
+    transform: transalte(-50%,-50%);
+    top: 30%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    background-clip: padding-box;
+    outline: none;
+    z-index: 101;
+    a {
+        color: #fff;
+    }
+}
+
+@media (min-width: 762px){
+    .success-popup{
+        width: 600px;
+        margin: 30px auto;
+    }
+}
+.popup-header{
+    padding: 15px 20px;
+}
+.popup-header button{
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+        color: $color-accent;
+    }
+}
+.success-popup h2 {
+    margin: 0;
+    line-height: 1.42857143;
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: #333645;
+}
+
+.popup-content {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px;
+}
+.success-popup p {
+    font-size: 1rem;
+    letter-spacing: .2px;
+    color: #666;
+    text-align: justify;
+    margin: 20px 0;
+}

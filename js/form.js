@@ -6,6 +6,8 @@ const lastName = document.getElementById('last-name');
 const email = document.getElementById('email');
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
+const fadeBackground = document.querySelector('.fade');
+const popup = document.querySelector('.success-popup');
 
 form.addEventListener('submit', (e) => {
     var test = checkInputs();
@@ -13,9 +15,22 @@ form.addEventListener('submit', (e) => {
     if (!test) {
         e.preventDefault();
     } else {
-        alert('Form submitted');
+        console.log('success')
+        fadeBackground.style.display = 'flex';
+        popup.style.display = 'block';
     }
 });
+
+// close popup
+
+const close = document.getElementById('close')
+
+close.addEventListener('click', function(){
+    fadeBackground.style.display = 'none';
+    popup.style.display = 'none';
+})
+
+// check inputs functions
 
 function checkInputs() {
     //get the values from the inputs
