@@ -1,3 +1,4 @@
+
 // form validation
 
 const form = document.getElementById('form');
@@ -8,8 +9,9 @@ const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 const fadeBackground = document.querySelector('.fade');
 const popup = document.querySelector('.success-popup');
+const body = document.getElementsByTagName('body');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('click', (e) => {
     var test = checkInputs();
     console.log('test', test);
     if (!test) {
@@ -18,6 +20,7 @@ form.addEventListener('submit', (e) => {
         console.log('success')
         fadeBackground.style.display = 'flex';
         popup.style.display = 'block';
+        body[0].style.overflow = 'hidden';
     }
 });
 
@@ -28,6 +31,7 @@ const close = document.getElementById('close')
 close.addEventListener('click', function(){
     fadeBackground.style.display = 'none';
     popup.style.display = 'none';
+    body[0].style.overflow = 'scroll';
 })
 
 // check inputs functions
