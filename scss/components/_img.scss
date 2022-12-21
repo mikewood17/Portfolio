@@ -31,5 +31,21 @@
 
 .placeholder-img{
     height: 400px;
-    width: 400px;
+    width: 100%;
 }
+@media (max-width: 930px) {
+    .placeholder-img{
+        height: 300px
+    }
+}
+@media (max-width: 700px) {
+    .placeholder-img{
+        height: 200px
+    }
+}
+@media (max-width: 450px) {
+    .placeholder-img{
+        height: 150px
+    }
+}
+

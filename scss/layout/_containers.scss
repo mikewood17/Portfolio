@@ -241,7 +241,7 @@ footer {
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    max-width: 60%;
+    max-width: 725px;
 }
 @media (max-width: $breakpoint-md) {
     .coding-examples {
@@ -249,6 +249,16 @@ footer {
     }
 }
 
-.carousel-item{
-    max-width: 400px !important;
+.main-content{
+    max-width: 100%;
+}
+
+// .carousel-item{
+//     max-width: 400px !important;
+// }
+.slick-slide{
+    margin: 0px 50px 0px 50px;
+}
+.coding-img{
+    max-width: 100%;
 }
