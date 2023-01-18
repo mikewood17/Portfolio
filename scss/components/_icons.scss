@@ -36,6 +36,9 @@
 .contact-input small {
     visibility: hidden;
     position: absolute;
-    bottom: 0;
     left: 0;
+}
+
+.required{
+    color: $color-accent;
 }
