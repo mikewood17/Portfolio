@@ -21,6 +21,12 @@
         max-width: 200px;
         max-height: 200px;
     }
+
+    .about-img {
+        width: em(200px) !important;
+        height: em(200px) !important;
+        margin: em(20px) !important;
+    }
 }
 
 // About me.html
@@ -32,6 +38,7 @@
     margin: em(40px);
     flex: 1;
 }
+
 
 // coding examples html
 

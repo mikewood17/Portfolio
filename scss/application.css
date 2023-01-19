@@ -286,6 +286,11 @@
     max-width: 200px;
     max-height: 200px;
   }
+  .about-img {
+    width: 12.5em !important;
+    height: 12.5em !important;
+    margin: 1.25em !important;
+  }
 }
 .about-img {
   border-radius: 50%;
@@ -409,7 +414,7 @@ ul {
   display: block;
   z-index: 98;
   background-color: #393939;
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .mobile-nav.is-active {
@@ -545,6 +550,8 @@ footer {
 @media (max-width: 380px) {
   .container {
     max-width: 300px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
 header {
