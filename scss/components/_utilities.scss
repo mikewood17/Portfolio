@@ -33,7 +33,6 @@
   body{
     display: block;
   }
-
 }
 
 @media (min-width: $breakpoint-xs) {
@@ -44,15 +43,21 @@
     display: block;
     margin: 0;
   }
+  .top-nav {
+    display: flex;
+  }
 }
 
 @media (min-width: $breakpoint-sm) {
   .hidden-sm{
     display: none;
   }
-  body{
-    display: block;
-    margin-left: -200px;
+  // body{
+  //   // display: block;
+  //   // margin-left: -200px;
+  // }
+  .top-nav{
+    display: flex;
   }
 }
 
@@ -70,6 +75,9 @@
   .title{
     font-size: 4rem;
   }
+  .top-nav-initial{
+    display: block;
+  }
 }
 
 @media (min-width: $breakpoint-lg) {
@@ -81,6 +89,10 @@
   }
   .nav{
     display: grid;
+  }
+  .placeholder-img {
+    height: 600px;
+    width: 600px;
   }
 }
 
@@ -107,5 +119,9 @@
   .about-container {
     display: flex;
     flex-direction: row !important;
+  }
+  .scheme-container{
+    max-width: 1000px;
+    align-items: center;
   }
 }

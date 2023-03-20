@@ -11,6 +11,13 @@
     margin-bottom: 50px;
 }
 
+@media (max-width: 380px) {
+    .container {
+        max-width: 300px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
 header {
     color: $white;
     background: url(../img/header-img.webp) center / cover no-repeat;
@@ -31,6 +38,7 @@ footer {
 }
 
 // header containers
+
     
 .heading{
     max-height: 650px;
@@ -39,6 +47,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.scroll a {
+    color: $white;
 }
 
 // Nav Containers
@@ -79,12 +91,30 @@ footer {
 
 .socials{
     margin-top: 20px;
-    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+.top-nav{
+    flex-direction: row;
+    background-color:$deep-grey;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+}
+
+.mobile-nav-list {
+    padding:0;
+    border-top: white 4px solid;
+}
+
+.mobile-nav-list-item {
+    margin-top: 20px;
+}
 // Main Containers
 
 // Primary contant
@@ -103,6 +133,8 @@ footer {
     margin: em(20px);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
     top: 0;
@@ -113,7 +145,11 @@ footer {
         transition: .5s ease !important;
     }
 }
-
+@media (max-width: $breakpoint-sm) {
+    .col{
+        margin: em(5px);
+    }
+}
 .img-container{
    background-image: url(../img/project-1.jpg) center / cover no repeat;
 }
@@ -125,12 +161,13 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: center;
 }
 .info-container{
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .contact-form{
     display: flex;
@@ -138,6 +175,8 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
 }
 .contact-name{
     display: flex;
@@ -151,7 +190,14 @@ footer {
     margin-right: 10px;
 }
 .contact-input{
-    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.contact-input label {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 //footer Containers
@@ -175,6 +221,7 @@ footer {
     font-size: $large__font-size;
 }
 
+
 // About-me.html
 
 .about-main{
@@ -196,4 +243,117 @@ footer {
     p {
         font-size: $large__font-size;
     }
+}
+
+//coding examples.html
+
+.coding-examples{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 725px;
+}
+@media (max-width: $breakpoint-md) {
+    .coding-examples {
+        max-width: 80%;
+    }
+}
+
+.main-content{
+    max-width: 100%;
+}
+
+// .carousel-item{
+//     max-width: 400px !important;
+// }
+.slick-slide{
+    margin: 0px 50px 0px 50px;
+}
+.coding-img{
+    max-width: 100%;
+}
+
+// contact success popup
+
+.fade{
+    display: none;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.7);
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center!important;
+    padding: 30px;
+}
+
+.success-popup{
+    display: none;
+
+    background-color: #fff;
+    color: #000;
+    width: auto;
+    position: relative;
+    transform: transalte(-50%,-50%);
+    top: 30%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    background-clip: padding-box;
+    outline: none;
+    z-index: 101;
+    a {
+        color: #fff;
+    }
+}
+
+@media (min-width: 762px){
+    .success-popup{
+        width: 600px;
+        margin: 30px auto;
+    }
+}
+.popup-header{
+    padding: 15px 20px;
+}
+.popup-header button{
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+        color: $color-accent;
+    }
+}
+.success-popup h2 {
+    margin: 0;
+    line-height: 1.42857143;
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: #333645;
+}
+
+.popup-content {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px;
+}
+.success-popup p {
+    font-size: 1rem;
+    letter-spacing: .2px;
+    color: #666;
+    text-align: justify;
+    margin: 20px 0;
 }

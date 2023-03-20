@@ -3,30 +3,40 @@
     <head>
         <title>Michael Wood Portfolio</title>
         <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+        
         <script src="https://kit.fontawesome.com/fc803fbe6f.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         <link rel="stylesheet" href="scss/application.css">
     </head>
 
     <body>
         <div class="grid">
+            <div class="top-nav grid-item hidden-md hidden-lg hidden-xl">
+                    <h1><a class="top-nav-initial" href="index.html">
+                        MW
+                    </a></h1>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+            </div>
             <header class="grid-item">
                 <div class="heading">
                     <div class="intro">
-                        <h1 class="title">
-                            My Name Is Michael Wood
-                        </h1>
+                        <div class="typing-container">
+                            <span id="sentence" class="sentence"></span>
+                            <span class="input-cursor"></span>
+                          </div>
                         <div>
-                            <img class="hero-img" src="img/avatar-img.png">
+                            <img class="hero-img" src="img/avatar-img.png" alt="Michael Wood logo">
                         </div>
-                        <h2>
-                            I am a Trainee Web Developer
-                        </h2>
                     </div>
                     <div class="scroll">
                         <h4>
                             <small>Scroll Down</small>
                         </h4>
-                        <i class="fa-solid fa-arrow-down"></i>
+                        <a href="index.html#portfolio"><i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                 </div>
             </header>
@@ -48,100 +58,115 @@
                         <a class="contact-me" href="index.html#contact-form">Contact Me</a>
                     </div>
                     <div class="socials">
-                        <a href="https://twitter.com/michael_wood17"><i class="social-icon fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/mew_illustration/"><i class="social-icon fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/michael-wood-a0b622256/"><i class="social-icon fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mikewood17"><i class="social-icon fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/michael_wood17" target="_blank"><i class="social-icon fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mew_illustration/" target="_blank"><i class="social-icon fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/michael-wood-a0b622256/" target="_blank"><i class="social-icon fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mikewood17" target="_blank"><i class="social-icon fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </nav>
 
             <main class="primary content grid-item container">
                 <div class="subheading">
-                    <h1 class="topic-header">
+                    <h1 class="topic-header" id="portfolio">
                         My Portfolio
                     </h1>
-                </div>               
-                <div class="row container" id="portfolio">
-                    <div class="item-1 col">
-                        <div class="img-container">
-                            <img  class="project-img" src="img/coming-soon.jpg">
-                        </div>
-                        <div class="project-name">
-                            <span>Project One</span>
-                        </div>
-                        <div>
-                            <a href="#" class="btn project-btn">
-                                <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
-                            </a>
-                        </div>
+                </div>
+                <div class="mobile-nav">
+                    <div>
+                        <ul class="mobile-nav-list">
+                            <li class="mobile-nav-list-item"><a href="about-me.html">About Me</a></li>
+                            <li><a href="index.html#portfolio">My Portfolio</a></li>
+                            <li><a href="coding-eg.html">Coding Examples</a></li>
+                            <li><a href="scheme.html">SCS Scheme</a></li>
+                        </ul>
                     </div>
-                    <div class="item-2 col">
-                        <div class="img-container">
-                            <img  class="project-img" src="img/coming-soon.jpg">
-                        </div>
-                        <div class="project-name">
-                            <span>Project Two</span>
-                        </div>
-                        <div>
-                            <a href="#" class="btn project-btn">
-                                <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item-3 col">
-                        <div class="img-container">
-                            <img  class="project-img" src="img/coming-soon.jpg">
-                        </div>
-                        <div class="project-name">
-                            <span>Project Three</span>
-                        </div>
-                        <div>
-                            <a href="#" class="btn project-btn">
-                                <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item-4 col">
-                        <div class="img-container">
-                            <img  class="project-img" src="img/coming-soon.jpg">
-                        </div>
-                        <div class="project-name">
-                            <span>Project Four</span>
-                        </div>
-                        <div>
-                            <a href="#" class="btn project-btn">
-                                <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item-5 col">
-                        <div class="img-container">
-                            <img  class="project-img" src="img/coming-soon.jpg">
-                        </div>
-                        <div class="project-name">
-                            <span>Project Five</span>
-                        </div>
-                        <div>
-                            <a href="#" class="btn project-btn">
-                                <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item-6 col">
-                        <div class="img-container">
-                            <img  class="project-img" src="img/coming-soon.jpg">
-                        </div>
-                        <div class="project-name">
-                            <span>Project Six</span>
-                        </div>
-                        <div>
-                            <a href="#" class="btn project-btn">
-                                <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
-                            </a>
-                        </div>
+                    <div>
+                        <a href="index.html#contact-form">Contact Me</a>
                     </div>
                 </div>
+                    <div class="row container">
+                        <div class="item-1 col">
+                            <div class="img-container">
+                                <img  class="project-img" src="img/project-1.png" alt="placeholder img">
+                            </div>
+                            <div class="project-name">
+                                <span>Project One: HTML, CSS, 
+                                    <br>JavaScript Reflection</span>
+                            </div>
+                            <div>
+                                <a href="https://mikewood17.github.io/Netmatters-Reflection-Project-1/" target="_blank" class="btn project-btn">
+                                    <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-2 col">
+                            <div class="img-container">
+                                <img  class="project-img" src="img/Project-2.png" alt="placeholder img">
+                            </div>
+                            <div class="project-name">
+                                <span>Project Two: JavaScript Array
+                                    <br> Reflection</span>
+                            </div>
+                            <div>
+                                <a href="https://mikewood17.github.io/JS-Array/" class="btn project-btn" target="_blank">
+                                    <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-3 col">
+                            <div class="img-container">
+                                <img  class="project-img" src="img/coming-soon.jpg" alt="placeholder img">
+                            </div>
+                            <div class="project-name">
+                                <span>Project Three</span>
+                            </div>
+                            <div>
+                                <a href="#" class="btn project-btn">
+                                    <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-4 col">
+                            <div class="img-container">
+                                <img  class="project-img" src="img/coming-soon.jpg" alt="placeholder img">
+                            </div>
+                            <div class="project-name">
+                                <span>Project Four</span>
+                            </div>
+                            <div>
+                                <a href="#" class="btn project-btn">
+                                    <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-5 col">
+                            <div class="img-container">
+                                <img  class="project-img" src="img/coming-soon.jpg" alt="placeholder img">
+                            </div>
+                            <div class="project-name">
+                                <span>Project Five</span>
+                            </div>
+                            <div>
+                                <a href="#" class="btn project-btn">
+                                    <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-6 col">
+                            <div class="img-container">
+                                <img  class="project-img" src="img/coming-soon.jpg" alt="placeholder img">
+                            </div>
+                            <div class="project-name">
+                                <span>Project Six</span>
+                            </div>
+                            <div>
+                                <a href="#" class="btn project-btn">
+                                    <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 <div class="secondary-content container" id="contact-form">
                     <div class="info-container">
                         <div class="subheading">
@@ -168,8 +193,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-form">
-                        <div class="contact-input contact-name">
+                    <div class="contact-form grid-item">
+                        <form class="form" id="form">
+                            <div class="contact-input">
+                                <label>First Name <span class="required">*</span> </label>
+                                <input class="form-control" type="text" placeholder="John" id="first-name">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Last Name <span class="required">*</span> </label>
+                                <input class="form-control" type="text" placeholder="Smith" id="last-name">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Email <span class="required">*</span>  </label>
+                                <input class="form-control" type="text" placeholder="John.smith@example.com" id="email">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Subject <span class="required">*</span> </label>
+                                <input class="form-control" type="text" placeholder="Enter Subject here" id="subject" maxlength="50">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="contact-input">
+                                <label>Message <span class="required">*</span> </label>
+                                <textarea class="form-control message" type="text" placeholder="Enter Message here" id="message" maxlength="400"></textarea>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+
+                        <!-- <div class="contact-input contact-name">
                             <input placeholder="First Name" type="text" class="first-name form-control">
                             <input placeholder="Last Name" type="text" class="last-name form-control">
                         </div>
@@ -181,17 +243,15 @@
                         </div>
                         <div class="contact-input">
                             <textarea placeholder="Message" type="text" class="message form-control input-large""></textarea>
-                        </div>
-                        <div>
-                            <button class="submit btn" type="submit">
-                                Submit
-                            </button>
-                        </div>
+                        </div> -->
+                            <div>
+                                <button class="submit btn" type="button">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <div>
-
-                    </div>
-                </div>
+                 </div>
             </main>
 
             <footer class="grid-item">
@@ -204,6 +264,23 @@
                     </h4>
                 </div>
             </footer>
+            <div class="fade">
+                <div class="success-popup">
+                    <div class="popup-header">
+                        <button id="close">&times;</button>
+                        <h2>Your message was sent</h2>
+                    </div>
+                    <div class="popup-content">
+                        <p>
+                            I will get in touch with you shortly
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="js/form.js"></script>
+        <script src="js/main.js"></script>
         </div>
     </body>
 </html>

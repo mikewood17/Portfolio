@@ -3,6 +3,8 @@
 // ===================================================
 * {
   box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
 }
 body {
     font-size: $base__font-size;
@@ -19,7 +21,14 @@ h1 {
     font-weight: $font-weight--light;
     font-size: em(42px);
     line-height: calc(46px / 42px);
-    margin-bottom: em(70px, 42px);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    h1 {
+      font-weight: $font-weight--light;
+      font-size: em(32px);
+      line-height: calc(46px / 42px);
+   }
   }
   
   h2 {
@@ -27,7 +36,7 @@ h1 {
     font-weight: $font-weight--thin;
     font-size: em(24px);
   }
-
+  
   a{
     text-decoration: none;
   }
@@ -35,3 +44,6 @@ h1 {
     list-style: none;
   }
   
+  ul {
+    padding: 0;
+  }

@@ -6,8 +6,10 @@
 
 .topic-header{
     text-align: center;
-    margin-top: 30px;
+    margin-top: em(30px);
+    margin-bottom: em(70px, 42px);
 }
+
 
 // nav
 
@@ -15,6 +17,13 @@
     margin-bottom: 20px;
 }
 
+.top-nav a {
+    color: $white;
+}
+.top-nav h1 {
+    font-size: 40px;
+    z-index: 99;
+}
 // Primary content
 
 .project-name{
