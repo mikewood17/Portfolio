@@ -70,7 +70,7 @@
     max-width: 50%;
   }
   .secondary-content,
-.about-container {
+  .about-container {
     display: flex;
     flex-direction: row !important;
   }
