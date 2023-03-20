@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+    include("includes/db-connect.php"); 
+?>
 <html>
     <head>
         <title>Michael Wood Portfolio</title>
@@ -193,6 +196,7 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD:index.html
                     <div class="contact-form grid-item">
                         <form class="form" id="form">
                             <div class="contact-input">
@@ -252,6 +256,35 @@
                         </form>
                     </div>
                  </div>
+=======
+                    <?php include("includes/mail.php"); ?>
+                    <form id="contactForm" method="$_POST" action="index.php#contactForm">
+                        <div class="contact-form">
+                            <div class="contact-input contact-name">
+                                <input name="Fname" id="Fname" placeholder="First Name" type="text" class="first-name form-control">
+                                <input name="Lname" id="Lname" placeholder="Last Name" type="text" class="last-name form-control">
+                            </div>
+                            <div class="contact-input">
+                                <input name="email" id="email" placeholder="Email" type="text" class="email form-control input-large">
+                            </div>
+                            <div class="contact-input">
+                                <input name="subject" id="subject" placeholder="Subject" type="text" class="subject form-control input-large"">
+                            </div>
+                            <div class="contact-input">
+                                <textarea name="message" id="message" placeholder="Message" type="text" class="message form-control input-large""></textarea>
+                            </div>
+                            <div>
+                                <button name="submit" value="submit" class="submit btn" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div>
+
+                    </div>
+                </div>
+>>>>>>> php:index.php
             </main>
 
             <footer class="grid-item">
