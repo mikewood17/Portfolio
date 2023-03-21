@@ -40,25 +40,59 @@
 }
 
 
-// coding examples html
+// coding examples
 
 .placeholder-img{
     height: 400px;
     width: 100%;
+    object-fit: contain;
 }
+
+.scrollableY-img{
+    max-height: 400px;
+    max-width: 583px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.scrollableX-img{
+    max-height: 400px;
+    max-width: 583px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+.scrollY-img{
+    width: 100%;
+    object-position: center;
+}
+.scrollX-img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
 @media (max-width: 930px) {
-    .placeholder-img{
-        height: 300px
+    .placeholder-img,
+    .scrollableY-img,
+    .scrollableX-img{
+        height: 300px;
+        width: 500px;
     }
 }
 @media (max-width: 700px) {
-    .placeholder-img{
-        height: 200px
+    .placeholder-img,
+    .scrollableY-img,
+    .scrollableX-img{
+        height: 200px;
+        width: 400px;
     }
 }
 @media (max-width: 450px) {
-    .placeholder-img{
-        height: 150px
+    .placeholder-img,
+    .scrollableY-img,
+    .scrollableX-img{
+        height: 150px;
+        width: 300px;
     }
 }
 

@@ -5,16 +5,29 @@
 // hamburger slideout
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
+    const body = document.getElementsByTagName('body');
+    
+    function openHamburger(){
+      menu_btn.classList.add('is-active');
+      mobile_menu.classList.add('is-active');
+      body[0].style.overflow = 'hidden';
+    }
 
-    menu_btn.addEventListener('click', function() {
-        menu_btn.classList.toggle('is-active');
-        mobile_menu.classList.toggle('is-active');
+    function closeHamburger(){
+        menu_btn.classList.remove('is-active');
+        mobile_menu.classList.remove('is-active');
+        body[0].style.overflowY = 'scroll';
+    }
+
+    menu_btn.addEventListener('click', function(){
+      if(mobile_menu.classList.contains('is-active')){
+        closeHamburger();
+      }else{
+        openHamburger();
+      }
     });
 
-    mobile_menu.addEventListener('click', function(){
-        menu_btn.classList.toggle('is-active');
-        mobile_menu.classList.toggle('is-active');
-    });
+    mobile_menu.addEventListener('click', closeHamburger());
 
 
 // Banner effect 

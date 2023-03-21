@@ -1,4 +1,3 @@
-
 // form validation
 
 const form = document.getElementById('form');
@@ -9,7 +8,6 @@ const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 const fadeBackground = document.querySelector('.fade');
 const popup = document.querySelector('.success-popup');
-const body = document.getElementsByTagName('body');
 
 form.addEventListener('click', (e) => {
     var test = checkInputs();
@@ -18,11 +16,15 @@ form.addEventListener('click', (e) => {
         e.preventDefault();
     } else {
         console.log('success')
-        fadeBackground.style.display = 'flex';
-        popup.style.display = 'block';
-        body[0].style.overflow = 'hidden';
     }
 });
+
+//if popup is open
+
+if (popup.style.display != 'block') {
+    body[0].style.overflow = 'hidden';
+}
+
 
 // close popup
 
@@ -31,7 +33,7 @@ const close = document.getElementById('close')
 close.addEventListener('click', function(){
     fadeBackground.style.display = 'none';
     popup.style.display = 'none';
-    body[0].style.overflow = 'scroll';
+    body[0].style.overflowY = 'scroll';
 })
 
 // check inputs functions
@@ -56,7 +58,7 @@ function checkInputs() {
     // check if contains special characters
     } else if  (!isValidName(firstNameValue)){
         // add error class
-        setErrorFor(firstName, 'First name cannot contain any special characters');
+        setErrorFor(firstName, 'First name cannot contain any special characters.');
         errorCount++;
     } else {
         // add success
@@ -73,7 +75,7 @@ function checkInputs() {
     // check if contains special characters
     } else if  (!isValidName(lastNameValue)){
         // add error class
-        setErrorFor(lastName, 'Last name cannot contain any special characters');
+        setErrorFor(lastName, 'Last name cannot contain any special characters.');
         errorCount++;
     } else {
         // add success
@@ -83,10 +85,10 @@ function checkInputs() {
     // ==== Email Validation ====
 
     if(emailValue != undefined && emailValue === '') {
-        setErrorFor(email, 'Email cannot be blank!');
+        setErrorFor(email, 'Email cannot be blank.');
         errorCount++;
     } else if (!isEmail(emailValue)) {
-        setErrorFor(email, 'Not a valid email!');
+        setErrorFor(email, 'Not a valid email.');
         errorCount++;
     } else {
         setSuccessFor(email);
@@ -95,7 +97,7 @@ function checkInputs() {
     // ==== Subject Validation ====
 
     if(subjectValue != undefined && subjectValue === '') {
-        setErrorFor(subject, 'Subject cannot be blank');
+        setErrorFor(subject, 'Subject cannot be blank.');
         errorCount++;
     } else {
         setSuccessFor(subject);
@@ -104,7 +106,7 @@ function checkInputs() {
     // ==== Message Validation ====
 
     if(messageValue != undefined && messageValue === '') {
-        setErrorFor(message, 'Message cannot be blank');
+        setErrorFor(message, 'Message cannot be blank.');
         errorCount++;
     } else {
         setSuccessFor(message);

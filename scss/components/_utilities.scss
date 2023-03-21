@@ -94,6 +94,10 @@
     height: 600px;
     width: 600px;
   }
+  .projects{
+    max-width: 600px ;
+    flex-direction: column !important;
+  }
 }
 
 @media (min-width: $breakpoint-xl) {
@@ -107,10 +111,10 @@
     display: grid;
   }
   .row{
-    max-width: 1500px;
+    max-width: 1200px;
   }
   .secondary-content{
-    max-width: 1500px;
+    max-width: 1200px;
   }
   .info-container{
     max-width: 50%;

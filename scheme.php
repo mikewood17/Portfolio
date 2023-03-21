@@ -8,68 +8,19 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         
-        <link rel="stylesheet" href="js/slick/slick.css">
-        <link rel="stylesheet" href="js/slick/slick-theme.css">
-        <link rel="stylesheet" href="scss/application.css">
+         <link rel="stylesheet" href="scss/application.css">
     </head>
 
     <body>
         <div class="grid">
-            <div class="top-nav grid-item hidden-md hidden-lg hidden-xl">
-                <h1><a class="top nav-initial" href="index.html">
-                    MW
-                </a></h1>
-                <button class="hamburger">
-                    <div class="bar"></div>
-                </button>
-            </div>
-            <header class="grid-item">
-                <div class="heading">
-                    <div class="intro">
-                        <div class="typing-container">
-                            <span id="sentence" class="sentence"></span>
-                            <span class="input-cursor"></span>
-                          </div>
-                        <div>
-                            <img class="hero-img" src="img/avatar-img.png" alt="Michael Wood logo">
-                        </div>
-                    </div>
-                    <div class="scroll">
-                        <h4>
-                            <small>Scroll Down</small>
-                        </h4>
-                        <a href="scheme.html#scheme"><i class="fa-solid fa-arrow-down"></i></a>
-                    </div>
-                </div>
-            </header>
-
-            <nav class="nav grid-item hidden-xxs hidden-xs hidden-sm">
-                <div class=" nav-container container">
-                    <div class="initials">
-                        <h1><a href="index.html">MW</a></h1>
-                    </div>
-                    <div class="nav-content">
-                        <ul>
-                            <li><a href="about-me.html">About Me</a></li>
-                            <li><a href="index.html#portfolio">My Portfolio</a></li>
-                            <li><a href="coding-eg.html">Coding Examples</a></li>
-                            <li><a href="scheme.html">SCS Scheme</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact">
-                        <a class="contact-me" href="index.html#contact-form">Contact Me</a>
-                    </div>
-                    <div class="socials">
-                        <a href="https://twitter.com/michael_wood17" target="_blank"><i class="social-icon fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/mew_illustration/" target="_blank"><i class="social-icon fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/michael-wood-a0b622256/" target="_blank"><i class="social-icon fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mikewood17" target="_blank"><i class="social-icon fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </nav>
+        <?php 
+            include("includes/topnav.php");
+            include("includes/header.php");
+            include("includes/sidenav.php");
+        ?>
 
             <main class="container scheme-container">
-                <div class="heading container">
+                <div class="heading container" id='main'>
                     <h1 class="topic header" id="scheme">
                         SCS Scheme
                     </h1>
@@ -119,32 +70,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="mobile-nav">
-                    <div class=" container">
-                    <div>
-                        <ul class="mobile-nav-list">
-                            <li class="mobile-nav-list-item"><a href="about-me.html">About Me</a></li>
-                            <li><a href="index.html#portfolio">My Portfolio</a></li>
-                            <li><a href="coding-eg.html">Coding Examples</a></li>
-                            <li><a href="scheme.html">SCS Scheme</a></li>
-                        </ul>
-                    </div>
+            <?php
+                include('includes/mobilenav.php');
+            ?>
             </main>
-
-
-            <footer class="grid-item">
-                <div class="footer-nav container">
-                    <i class="fa-solid fa-arrow-up"></i>
-                    <h4>
-                        <a href="#">
-                            <small>Back To Top</small>
-                        </a>
-                    </h4>
-                </div>
-            </footer>
+            <?php
+                include('includes/footer.php')
+            ?>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <script src="js/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

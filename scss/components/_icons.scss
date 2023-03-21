@@ -42,3 +42,17 @@
 .required{
     color: $color-accent;
 }
+
+.icon-container{
+    background-color: $color-accent;
+    font-size: 30px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-container i {
+    color: $white;
+}

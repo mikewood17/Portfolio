@@ -48,7 +48,9 @@
   display: block;
   z-index: 98;
   background-color: $color-primary;
-  padding-top: 80px;
+  padding-top: 100px;
+
+  transition: 0.4s;
 }
 
 .mobile-nav.is-active {

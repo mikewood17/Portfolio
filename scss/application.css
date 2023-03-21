@@ -58,6 +58,10 @@
     height: 600px;
     width: 600px;
   }
+  .projects {
+    max-width: 600px;
+    flex-direction: column !important;
+  }
 }
 @media (min-width: 1200px) {
   .hidden-xl {
@@ -70,10 +74,10 @@
     display: grid;
   }
   .row {
-    max-width: 1500px;
+    max-width: 1200px;
   }
   .secondary-content {
-    max-width: 1500px;
+    max-width: 1200px;
   }
   .info-container {
     max-width: 50%;
@@ -140,6 +144,18 @@
 .long {
   font-size: 18px;
   font-weight: 400;
+}
+
+.skill-header {
+  margin-bottom: 0;
+}
+
+.skills p {
+  font-size: 16px !important;
+}
+
+.col p {
+  font-size: 16px;
 }
 
 .btn {
@@ -230,6 +246,11 @@
   visibility: visible;
 }
 
+.project-btn_container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .social-icon {
   display: block;
   color: #fff;
@@ -269,6 +290,21 @@
   color: #ec7f37;
 }
 
+.icon-container {
+  background-color: #ec7f37;
+  font-size: 30px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container i {
+  color: #fff;
+}
+
 .hero-img {
   border: 5px solid #fff;
   border-radius: 50%;
@@ -303,21 +339,60 @@
 .placeholder-img {
   height: 400px;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.scrollableY-img {
+  max-height: 400px;
+  max-width: 583px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.scrollableX-img {
+  max-height: 400px;
+  max-width: 583px;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.scrollY-img {
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.scrollX-img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media (max-width: 930px) {
-  .placeholder-img {
+  .placeholder-img,
+  .scrollableY-img,
+  .scrollableX-img {
     height: 300px;
+    width: 500px;
   }
 }
 @media (max-width: 700px) {
-  .placeholder-img {
+  .placeholder-img,
+  .scrollableY-img,
+  .scrollableX-img {
     height: 200px;
+    width: 400px;
   }
 }
 @media (max-width: 450px) {
-  .placeholder-img {
+  .placeholder-img,
+  .scrollableY-img,
+  .scrollableX-img {
     height: 150px;
+    width: 300px;
   }
 }
 * {
@@ -326,10 +401,15 @@
   min-width: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-y: auto;
 }
 
 header {
@@ -414,7 +494,8 @@ ul {
   display: block;
   z-index: 98;
   background-color: #393939;
-  padding-top: 80px;
+  padding-top: 100px;
+  transition: 0.4s;
 }
 
 .mobile-nav.is-active {
@@ -463,21 +544,6 @@ ul {
   margin-left: 8px;
 }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @keyframes blink {
   0% {
     opacity: 1;
@@ -493,8 +559,7 @@ ul {
   }
 }
 .input-cursor {
-  -webkit-animation: blink 0.6s linear infinite alternate;
-          animation: blink 0.6s linear infinite alternate;
+  animation: blink 0.6s linear infinite alternate;
 }
 
 .grid {
@@ -680,6 +745,17 @@ footer {
   transition: 0.5s ease !important;
 }
 
+@media (min-width: 992px) {
+  .item-1,
+  .item-2,
+  .item-3 {
+    width: 600px;
+  }
+}
+.projects {
+  align-items: center;
+}
+
 @media (max-width: 576px) {
   .col {
     margin: 0.3125em;
@@ -687,6 +763,10 @@ footer {
 }
 .img-container {
   background-image: url(../img/project-1.jpg) center/cover no repeat;
+}
+
+.skills {
+  width: 300px;
 }
 
 .secondary-content {
@@ -740,11 +820,12 @@ footer {
 }
 
 .footer-nav {
-  margin-top: 1.25em;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  margin-bottom: 0;
 }
 .footer-nav a {
   color: #fff;
@@ -752,6 +833,7 @@ footer {
 
 .content {
   font-size: 20px;
+  width: 100%;
 }
 
 .about-main {
@@ -789,6 +871,7 @@ footer {
 }
 .main-content {
   max-width: 100%;
+  margin-bottom: 50px;
 }
 
 .slick-slide {
@@ -800,7 +883,7 @@ footer {
 }
 
 .fade {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -820,13 +903,12 @@ footer {
 }
 
 .success-popup {
-  display: none;
+  display: block;
   background-color: #fff;
   color: #000;
   width: auto;
   position: relative;
   transform: transalte(-50%, -50%);
-  top: 30%;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;

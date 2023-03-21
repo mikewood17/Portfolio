@@ -1,6 +1,7 @@
 $('.carousel').slick({
   arrows: false,
   slidesToShow: 1,
+  swipe: false,
   dots: true,
   variableWidth: true,
   centerMode: true,

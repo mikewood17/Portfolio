@@ -6,10 +6,16 @@
   min-height: 0;
   min-width: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-size: $base__font-size;
     line-height: calc($base__line / $base__font-size);
     font-family: $font-family--primary;
+    overflow-y: auto;
 }
 
 header {

@@ -145,6 +145,17 @@ footer {
         transition: .5s ease !important;
     }
 }
+@media (min-width: $breakpoint-lg){
+    .item-1,
+    .item-2,
+    .item-3{
+        width: 600px;
+    }
+}
+
+.projects{
+    align-items: center;
+}
 @media (max-width: $breakpoint-sm) {
     .col{
         margin: em(5px);
@@ -152,6 +163,10 @@ footer {
 }
 .img-container{
    background-image: url(../img/project-1.jpg) center / cover no repeat;
+}
+
+.skills{
+    width: 300px;
 }
 
 // Secondary Content
@@ -203,11 +218,12 @@ footer {
 //footer Containers
 
 .footer-nav{
-    margin-top: em(20px);
+    padding: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 0;
     a{
         color: $white;
     }
@@ -219,6 +235,7 @@ footer {
 
 .content{
     font-size: $large__font-size;
+    width: 100%;
 }
 
 
@@ -262,6 +279,7 @@ footer {
 
 .main-content{
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
 // .carousel-item{
@@ -277,7 +295,7 @@ footer {
 // contact success popup
 
 .fade{
-    display: none;
+    display: flex;
 
     position: fixed;
     top: 0;
@@ -298,14 +316,13 @@ footer {
 }
 
 .success-popup{
-    display: none;
+    display: block;
 
     background-color: #fff;
     color: #000;
     width: auto;
     position: relative;
     transform: transalte(-50%,-50%);
-    top: 30%;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
     background-clip: padding-box;
