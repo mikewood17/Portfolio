@@ -159,13 +159,19 @@
                         </div>
                         <div class="item-3 col">
                             <div class="img-container">
-                                <img  class="project-img" src="img/coming-soon.jpg" alt="placeholder img">
+                                <img  class="project-img" src="img/wordpress-project.jpg" alt="placeholder img">
                             </div>
                             <div class="project-name">
-                                <span>Project Three</span>
+                                <span>Project Three: Build A Guardian Wordpress site</span>
                             </div>
+                            <p>
+                                A site based on my favourite game around builds used in said game with working contact form and news section made in Wordpress
+                            </p>
+                            <p>
+                                <small>Languages used: PHP, SQL, CSS, HTML</small>
+                            </p>
                             <div class="project-btn_container">
-                                <a href="#" class="btn project-btn">
+                                <a href="http://buildaguardian.michael-wood.netmatters-scs.co.uk/" class="btn project-btn">
                                     <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
                                 </a>
                             </div>
