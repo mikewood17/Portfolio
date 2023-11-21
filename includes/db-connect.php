@@ -2,7 +2,7 @@
 
 //connect to local databse
 
-// $servername = "localhost";
+// $servername = "localhost:3306";
 // $username = "root";
 // $password = "";
 
@@ -18,10 +18,12 @@
 // connect to database
 try {
     $servername = "localhost:3306";
-    $username = "michaelw_michaelwood";
-    $password = "MeggyCat!123";
+    // $username = "michaelw_michaelwood";
+    // $password = "MeggyCat!123";
+    $username = "root";
+    $password = "";
 
-    $conn = new PDO("mysql:host=$servername; dbname=michaelw_portfolio", $username, $password);
+    $conn = new PDO("mysql:host=$servername; dbname=portfolio", $username, $password);
     $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch(PDOException $e) {

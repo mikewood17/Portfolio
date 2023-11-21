@@ -27,7 +27,7 @@
                     </div>
                     <div class="about-container">
                         <div class="about-img-container">
-                            <img class="about-img" src="img/about-me.GIF">
+                            <img class="about-img" src="img/mecambridge.jpg">
                         </div>
                             <div class="short">
                                 <h1 class="about-heading">
@@ -48,7 +48,7 @@
                                         <p>
                                             If you would like to get in contact with me please click the button below:
                                         </p>
-                                        <a class="btn" href="index.html#contact-form">Contact</a>
+                                        <a class="btn" href="index.php#contact-form">Contact</a>
                                     </div>  
                             </div>
                         </div>

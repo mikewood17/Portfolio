@@ -329,7 +329,9 @@
   }
 }
 .about-img {
-  border-radius: 50%;
+  border-radius: 90em 90em 0 0/100%;
+  border: 5px solid #393939;
+  padding: 20px;
   width: 18.75em;
   height: 18.75em;
   margin: 2.5em;
@@ -809,7 +811,6 @@ footer {
 }
 
 .contact-input {
-  margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
