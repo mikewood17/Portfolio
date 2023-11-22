@@ -4,31 +4,30 @@
 
 //Base
 
-.topic-header{
-    text-align: center;
-    margin-top: em(30px);
-    margin-bottom: em(70px, 42px);
+.topic-header {
+  text-align: center;
+  margin-top: em(30px);
+  margin-bottom: em(70px, 42px);
 }
-
 
 // nav
 
-.contact-me{
-    margin-bottom: 20px;
+.contact-me {
+  margin-bottom: 20px;
 }
 
 .top-nav a {
-    color: $white;
+  color: $white;
 }
 .top-nav h1 {
-    font-size: 40px;
-    z-index: 99;
+  font-size: 40px;
+  z-index: 99;
 }
 // Primary content
 
-.project-name{
-    margin-bottom: 20px;
-    font-weight: $font-weight--bold;
+.project-name {
+  margin-bottom: 20px;
+  font-weight: $font-weight--bold;
 }
 
 // Main Content
@@ -36,44 +35,44 @@
 // Primary Content
 
 // Secondary Content
-.contact-header{
-    margin-top: 5px;
+.contact-header {
+  margin-top: 5px;
 }
-.declaration{
-    color: $color-secondary;
-    text-decoration: none;
-    font-weight: $font-weight--bold;
-    font-size: $large__font-size;
+.declaration {
+  color: $color-secondary;
+  text-decoration: none;
+  font-weight: $font-weight--bold;
+  font-size: $large__font-size;
 }
 
 // About me html
 
-.about-me-header{
-    margin-top: 50px;
-    margin-left: 50px;
+.about-me-header {
+  margin-top: 50px;
+  text-align: center;
 }
-.about-heading{
-    font-size: 2em;
-}
-
-.short{
-    font-size: $large__font-size;
-    font-weight: $font-weight--bold ;
+.about-heading {
+  font-size: 2em;
 }
 
-.long{
-    font-size: 18px;
-    font-weight: $font-weight--medium;
+.short {
+  font-size: $large__font-size;
+  font-weight: $font-weight--bold;
 }
 
-.skill-header{
-    margin-bottom: 0;
+.long {
+  font-size: 18px;
+  font-weight: $font-weight--medium;
+}
+
+.skill-header {
+  margin-bottom: 0;
 }
 
 .skills p {
-    font-size: 16px !important;
+  font-size: 16px !important;
 }
 
 .col p {
-    font-size: 16px ;
+  font-size: 16px;
 }

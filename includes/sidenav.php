@@ -9,6 +9,7 @@
                             <li><a href="index.php#portfolio">My Portfolio</a></li>
                             <li><a href="coding-eg.php">Coding Examples</a></li>
                             <li><a href="scheme.php">SCS Scheme</a></li>
+                            <!-- <li><a href="gallery.php">Gallery</a></li> -->
                         </ul>
                     </div>
                     <div class="contact">

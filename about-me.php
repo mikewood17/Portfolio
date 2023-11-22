@@ -29,20 +29,21 @@
                         <div class="about-img-container">
                             <img class="about-img" src="img/mecambridge.jpg">
                         </div>
+                        <div class="about-txt">
                             <div class="short">
                                 <h1 class="about-heading">
-                                    <small>The short</small>
+                                    <small>Who is Mike?</small>
                                 </h1>
-                                <p>
-                                    I am a trainee web developer with a focus on front-end web development. Currently studing from home in Norwich Norfolk on the Netmatters Scion Coalition Scheme.
-                                </p>
                             </div>
                             <div class="long">
-                                <h1 class="about-heading">
-                                    <small>The Long</small>
-                                </h1>
                                 <p>
-                                    My name is Michael Wood and I am an aspiring web developer. I didn’t start my journey into the technological industry until late. Initially, I attended Sheffield Hallam University with dreams of wanting to become a physiotherapist but realised it wasn't for me. So I moved to Norwich and during lockdown, I started my first piece of coding by doing a javascript course on Udemy. This led me to where I am now, currently undertaking the Netmatters Scion Coalition Scheme. My reason for wanting to become a front-end developer is I believe it merges my two strongest skills which are creativity and problem-solving along with my passion for wanting to help people. I believe this comes from my keen interest in technology whether through gaming or creating digital art. 
+                                    Mike Wood is a Junior Web developer from the mustard capitol of England, Norwich in Norfolk.
+                                </p>
+                                <p>
+                                    I have been training to become a web developer and currently searching for my first junior role. To see more about this check out my Portfolio Page.
+                                </p>
+                                <p>
+                                    I am a creative thinker who loves to design whatever my ADHD brain comes up with. This usually includes tattoo styled designs based around other interests. I'm also a big sports fan who loves nothing more than sitting infront of red-zone for hours watching the NFL or staying up late to catch my favourite NBA team the Toronto Raptors play.
                                 </p>  
                                     <div class="about-contact">
                                         <p>

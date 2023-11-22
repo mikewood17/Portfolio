@@ -139,7 +139,7 @@
                             <p>This is a mock up of the actual Netmatters website which has been used as a master project for showcasing the use of multiple languages in the same site. Includes a working contact form to send to a database along with responsive layout and design.</p>
                             <p><small>Languages used: HTML, CSS, SASS/SCSS, JS, PHP, SQL</small></p>
                             <div class="project-btn_container">
-                                <a href="https://netmatters.michael-wood.netmatters-scs.co.uk/index.php" target="_blank" class="btn project-btn">
+                                <a href="https://netmatters-mock.mewdev.co.uk/" target="_blank" class="btn project-btn">
                                     <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
                                 </a>
                             </div>
@@ -161,19 +161,19 @@
                         </div>
                         <div class="item-3 col">
                             <div class="img-container">
-                                <img  class="project-img" src="img/wordpress-project.jpg" alt="placeholder img">
+                                <img  class="project-img" src="img/project-img-03.jpg" alt="placeholder img">
                             </div>
                             <div class="project-name">
-                                <span>Project Three: Build A Guardian Wordpress site</span>
+                                <span>Project Three: Next.js Portfolio & Destiny 2 Site</span>
                             </div>
                             <p>
-                                A site based on my favourite game around builds used in said game with working contact form and news section made in Wordpress
+                                A site based on my favourite game around the many possible builds used in said game and also contains some portfolio work. Before the latest Update to Next.js it had a working contact form, sign up and comment section, I am currently working on getting this back up and running.
                             </p>
                             <p>
-                                <small>Languages used: PHP, SQL, CSS, HTML</small>
+                                <small>Languages used: Next.js, Typescript, React, HTML, CSS</small>
                             </p>
                             <div class="project-btn_container">
-                                <a href="http://buildaguardian.michael-wood.netmatters-scs.co.uk/" class="btn project-btn">
+                                <a href="https://mikes-blog.vercel.app/" class="btn project-btn" target="_blank">
                                     <small>View Project <i class="fa-solid fa-arrow-right"></i></small>
                                 </a>
                             </div>
@@ -194,13 +194,13 @@
                             </div>
                             <div class="contact-number">
                                 <a href="#">
-                                    <span class="declaration">07398 50 06 69</span>
+                                    <span class="declaration">07398 500669</span>
                                 </a>
                             </div>
                             <br>
                             <div>
                                 <a href="#">
-                                    <span class="declaration">michael.wood@netmatters-scs.com</span>
+                                    <span class="declaration">mikewood@mikedev.com</span>
                                 </a>
                             </div>
                         </div>

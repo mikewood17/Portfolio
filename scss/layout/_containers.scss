@@ -148,7 +148,7 @@ footer {
   .item-1,
   .item-2,
   .item-3 {
-    width: 600px;
+    max-width: 600px;
   }
 }
 
@@ -176,6 +176,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
+  gap: 20px;
 }
 .info-container {
   display: flex;
@@ -204,7 +205,7 @@ footer {
   margin-right: 10px;
 }
 .contact-input {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -242,13 +243,17 @@ footer {
 
 .about-container {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.short,
-.long {
+.about-txt {
+  max-width: 80%;
+}
+
+.short {
   flex: 1;
-  margin: em(20px);
+  margin-bottom: em(20px);
 }
 
 .about-me {

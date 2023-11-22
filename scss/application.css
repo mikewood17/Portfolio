@@ -82,8 +82,7 @@
   .info-container {
     max-width: 50%;
   }
-  .secondary-content,
-  .about-container {
+  .secondary-content {
     display: flex;
     flex-direction: row !important;
   }
@@ -129,7 +128,7 @@
 
 .about-me-header {
   margin-top: 50px;
-  margin-left: 50px;
+  text-align: center;
 }
 
 .about-heading {
@@ -324,16 +323,16 @@
   }
   .about-img {
     width: 12.5em !important;
-    height: 12.5em !important;
+    height: 25em !important;
     margin: 1.25em !important;
   }
 }
 .about-img {
   border-radius: 90em 90em 0 0/100%;
-  border: 5px solid #393939;
+  border: 3px solid #393939;
   padding: 20px;
   width: 18.75em;
-  height: 18.75em;
+  height: 25em;
   margin: 2.5em;
   flex: 1;
 }
@@ -751,7 +750,7 @@ footer {
   .item-1,
   .item-2,
   .item-3 {
-    width: 600px;
+    max-width: 600px;
   }
 }
 .projects {
@@ -777,6 +776,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
+  gap: 20px;
 }
 
 .info-container {
@@ -811,7 +811,7 @@ footer {
 }
 
 .contact-input {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -843,14 +843,18 @@ footer {
 
 .about-container {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.short,
-.long {
+.about-txt {
+  max-width: 80%;
+}
+
+.short {
   flex: 1;
-  margin: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 .about-me p {

@@ -2,9 +2,9 @@
 
 //connect to local databse
 
-// $servername = "localhost:3306";
-// $username = "root";
-// $password = "";
+$servername = "localhost:3306";
+$username = "root";
+$password = "";
 
 // try {
 //     $conn = new PDO("mysql:host=$servername;dbname=portfolio", $username, $password);
@@ -16,20 +16,20 @@
 //   }
 
 // connect to database
-try {
-    $servername = "localhost:3306";
-    // $username = "michaelw_michaelwood";
-    // $password = "MeggyCat!123";
-    $username = "root";
-    $password = "";
+// try {
+//     $servername = "localhost:3306";
+//     // $username = "michaelw_michaelwood";
+//     // $password = "MeggyCat!123";
+//     $username = "sewsdegjiijv";
+//     $password = "Bellend!123";
 
-    $conn = new PDO("mysql:host=$servername; dbname=portfolio", $username, $password);
-    $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//     $conn = new PDO("mysql:host=$servername; dbname=i9657419_wp1", $username, $password);
+//     $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-} catch(PDOException $e) {
-    echo "error!: " . $e -> getMessage();
-    die();
-}
+// } catch(PDOException $e) {
+//     echo "error!: " . $e -> getMessage();
+//     die();
+// }
 
 
 // check button press
